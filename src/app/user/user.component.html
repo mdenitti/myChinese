@@ -1,0 +1,9 @@
+<p>user works!</p>
+
+@for (user of users ; track user.id) {
+    @if (user.age >= 30) {
+       <span style="color:brown">{{ user.name}} is retired</span>
+    } @else {
+        <p>{{ user.name}} is fit for duty</p>
+    }
+}
